@@ -1,24 +1,190 @@
-# Logs
-logs
-*.log
+# =============================
+# ГЛОБАЛЬНЫЕ / ОПЕРАЦИОННЫЕ СИСТЕМЫ / РЕДАКТОРЫ
+# =============================
+
+# МакОСЬ
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Швиндавс
+Thumbs.db
+Thumbs.db:encryptable
+desktop.ini
+$RECYCLE.BIN/
+
+#  Шедевро Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================
+# ПЕРЕМЕННЫЕ ОКРУЖЕНИЯ / СЕКРЕТЫ
+# =============================
+
+# Файлы с переменными окружения
+.env
+.env.*
+!.env.example
+
+# Ключи и сертификаты
+*.key
+*.pem
+*.crt
+*.pfx
+secrets.*
+credentials.*
+
+# =============================
+# VUE 3 / VITE / FRONTEND
+# =============================
+
+# Модули Node.js
+node_modules/
+
+# Логи пакетных менеджеров
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Собранный фронтенд
+/dist/
+/.vite/
+
+# Локальные конфиги Vite
 *.local
 
-# Editor directories and files
+# Кэши
+.cache/
+.eslintcache
+.stylelintcache
+
+# Глобальные типы Vue
+.vue-global-types/
+
+# =============================
+# TAURI
+# =============================
+
+#вся хуйня.
+/src-tauri/target/
+/src-tauri/gen/
+/src-tauri/tauri.conf.json.local
+/src-tauri/bundle/
+
+# Логи сборки Tauri
+src-tauri/debug.log
+src-tauri/build.log
+
+# Sidecar бинарники (если используются)
+src-tauri/sidecar/
+
+# =============================
+# RUST
+# =============================
+Cargo.lock
+.rustfmt.toml.local
+
+# =============================
+# PYTHON (Он Вроде как будет так что хз. но пусть будет)
+# =============================
+
+# Виртуальные окружения
+.venv/
+venv/
+env/
+
+# Сборки Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =============================
+# IDE - JETBRAINS (IntelliJ, PyCharm, etc.)
+# =============================
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Кэши JetBrains
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# =============================
+# IDE - VS Code
+# =============================
+
+# Настройки VS Code (Хз тут как хотите)
 .vscode/*
+!.vscode/settings.json
 !.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+!.vscode/launch.json
+
+# =============================
+# Другие редакторы
+# =============================
+
+# Vim
+*.swp
+*.swo
+
+# Бэкапы и временные файлы
+*.bak
+*.tmp
+*.orig
+
+# =============================
+# БАЗЫ ДАННЫХ / ЛОКАЛЬНОЕ СОСТОЯНИЕ
+# =============================
+
+# SQLite и другие БД
+*.sqlite
+*.sqlite3
+*.db
+
+# Логи
+*.log
+
+# =============================
+# DOCKER
+# =============================
+
+# Локальные файлы Docker
+.docker/
+docker-compose.override.yml
+
+# =============================
+# ВИРТУАЛЬНЫЕ МАШИНЫ / ЭМУЛЯТОРЫ
+# =============================
+
+.vagrant/
+*.vmx
+*.vmdk
+
+# =============================
+# OBSIDIAN (ну а хули нет)
+# =============================
+
+.obsidian/workspace.json
+.obsidian/cache/
+
+# =============================
+# CI / ВРЕМЕННЫЕ ФАЙЛЫ
+# =============================
+
+# Тестики
+coverage/
+reports/
+
+# Мусор
+.tmp/
+.temp/
